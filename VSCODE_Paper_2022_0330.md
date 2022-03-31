@@ -1,6 +1,6 @@
 #! https://zhuanlan.zhihu.com/p/490547887
 
-# 如何用Vscode简洁地写Markdown笔记
+# 如何用 Vscode 简洁地写 Markdown 笔记
 
 1. 限制编辑器(Editor) 数目
 2. 切换预览(Toggle Preview) 快捷键
