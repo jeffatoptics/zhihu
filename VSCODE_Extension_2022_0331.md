@@ -1,5 +1,4 @@
-#! https://zhuanlan.zhihu.com/p/490793542
-
+#! https://zhuanlan.zhihu.com/p/491245846
 # 编辑 Markdown 笔记的 VSCODE 插件
 
 |No.| 插件 | 功能|必要性|
