@@ -1,5 +1,8 @@
 #! https://zhuanlan.zhihu.com/p/491245846
+
 # 编辑 Markdown 笔记的 VSCODE 插件
+
+![Image](https://pic4.zhimg.com/80/v2-b6ce0d7c30f18ed140193947a677df27.png)
 
 |No.| 插件 | 功能|必要性|
 |:--|:--|:--|:--|
@@ -14,7 +17,7 @@
 |9|Auto Markdown TOC by AX1|对Header自动编号,插入带入编号的TOC |必选|
 |10|`Draw.io` Integration| 在绘制较复杂图时候，用`draw.io` 简单图形绘制用MPE(Markdown Preview Enhanced) 内置的Mermaid |必选|
 |11|Mermaid Editor| MPE已经内置Mermaid。它的功能是专门对mermaid文本进行保存，调试，也可用来转换mermaid成png/svg文件|可选|
-|12|Mermaid Marddwon Syntax Highlighting|对mermaid语法进行颜色标亮|可选|
+|12|Mermaid Markdown Syntax Highlighting|对mermaid语法进行颜色标亮|可选|
 |13|`Draw.io` Integration: Mermaid plugin| `draw.io`可嵌入mermaid，然后基于此进行额外连线编辑|可选|
 |14| Marp for VS code| 提供比MPE更为方便的Markdown制作PPT文件的方式|可选|
 |15| Markmap|制作脑图，能根据点击动态展开/收缩目录|可选|
