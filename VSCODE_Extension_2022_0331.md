@@ -2,7 +2,7 @@
 
 # 编辑 Markdown 笔记的 VSCODE 插件
 
-![Image](https://pic4.zhimg.com/80/v2-b6ce0d7c30f18ed140193947a677df27.png)
+![Image](https://pic4.zhimg.com/80/v2-0711778443470d862bd4488ebc1eda74.png)
 
 |No.| 插件 | 功能|必要性|
 |:--|:--|:--|:--|
@@ -23,7 +23,8 @@
 |15| Markmap|制作脑图，能根据点击动态展开/收缩目录|可选|
 |16| FOAM|提供dailynote的快捷方式，支持[[wikilink]],提供双向链接graph显示|可选|
 |17|Zhihu On VSCode| 在Vscode里发知乎文章|可选|
-|18|Notes|提供左边边栏上一个NOTES图标，可用于在无需打开新的项目/目录时，存放/编辑随手记录|可选|p
+|18|Notes|提供左边边栏上一个NOTES图标，可用于在无需打开新的项目/目录时，存放/编辑随手记录|可选|
+|19|Git Graph|提供直观的文档改动历史，和版本记录|可选+推荐|
 
 ![Image](https://pic4.zhimg.com/80/v2-54c7427d486930c66b856f55e4aa32c9.png)
 
@@ -32,3 +33,5 @@
 ![Image](https://pic4.zhimg.com/80/v2-c0230fd4cd87391bba19206d88f008f2.png)
 
 ![Image](https://pic4.zhimg.com/80/v2-86dd1d1619e07653953913a878ca6517.png)
+
+![Image](https://pic4.zhimg.com/80/v2-2a11e429f41371a3648bc6ec6b8b97b1.png)
