@@ -7,10 +7,18 @@
 解决方法: `CTRL+,` 然后选择及改动MPE里缺省参数,Markdown-preview-enhanced: Print Background为enabled.
 
 > Markdown-preview-enhanced: Print Background:
-> ☑️Whether to print background for file export or not. If set to `false`, then `github-light` preview theme will be used. You can also set `print_background` in front-matter for individual files.
+>
+> ☑️ Whether to print background for file export or not. If set to `false`, then `github-light` preview theme will be used. You can also set `print_background` in front-matter for individual files.
 
-右键点击html或者pdf输出时候,输出文件与选择的预览风格一致
+右键点击html或者pdf输出时候,输出文件就和选择的预览风格一致
 
+如果不选择这个参数，也可以在文章前第一行加入 `print_background: true`的设置，效果一样。
+
+```
+---
+print_background: true
+---
+```
 下图选择 Vue 风格的输出,并转为相同风格的PDF文档
 
 1. `preview` 框里点右键 选择 `vue.css`
