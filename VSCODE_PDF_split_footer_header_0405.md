@@ -1,7 +1,20 @@
 #! https://zhuanlan.zhihu.com/p/493494190
+
 # Markdown Preview Enhanced (MPE) 输出PDF文档分页及页眉页脚
 
-## 参考
+- 1. 参考
+- 2. 背景
+- 3. 解决方法
+    - 3.1. 分页
+    - 3.2. 页眉页脚
+    - 3.3. 一个例子
+        - 3.3.1. 代码
+        - 3.3.2. 效果
+- 4. 稍微复杂一点的页眉页脚
+- 5. 更复杂的页眉页脚
+
+
+## 1. 参考
 
 1. [Github:Header and Footer with Puppeteer PDF? · Issue #142](https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues/142)
 
@@ -9,7 +22,7 @@
 
 1. [Github: Headers/Footers on PDF! · Issue #1028](https://github.com/shd101wyy/markdown-preview-enhanced/issues/1028)
 
-## 背景
+## 2. 背景
 
 MPE最为方便的两个文档输出工具是:
 
@@ -24,13 +37,15 @@ MPE最为方便的两个文档输出工具是:
     ![Image](https://pic4.zhimg.com/80/v2-e5a516e56fe48bdcdb6d5747725a861d.png)
 
 
-## 分页
+## 3. 解决方法
+
+### 3.1. 分页
 
 在markdown文件中分页，用html符号解决: `<div STYLE="page-break-after: always;"></div>`
 
 不影响html显示，输出为pdf时候会分页
 
-## 页眉页脚
+### 3.2. 页眉页脚
 
 - 定义chrome或者puppeteer配置参数 `headerTemplate`, `footerTemplate`,以及 `margin`，`displayHeaderFooter`
 
@@ -38,14 +53,14 @@ MPE最为方便的两个文档输出工具是:
 
 具体例子参见如下。
 
-## 一个例子
+### 3.3. 一个例子
 
 - 两页文档，分页。 
 - 页头居中，显示文档Title
 - 页眉右边对起，显示当前页数和总页数
 
 
-#### 代码
+#### 3.3.1. 代码
 ```txt
 ---
 chrome:
@@ -93,12 +108,12 @@ chrome:
 
 
 
-#### 效果
+#### 3.3.2. 效果
 
 ![Image](https://pic4.zhimg.com/80/v2-08d6bb7a663f2d5cb753eaeee9a2db52.png)
 
 
-### 稍微复杂一点的页眉页脚
+## 4. 稍微复杂一点的页眉页脚
 
 - 页眉分行
 - 页脚 分两部分，左对齐写时间，右对齐写页数
@@ -112,7 +127,7 @@ chrome:
 效果如图
 ![Image](https://pic4.zhimg.com/80/v2-adc67537210de96e81806d24ba8ecb33.png)
 
-### 更复杂的页眉页脚
+## 5. 更复杂的页眉页脚
 
 - 用word打开html,然后手工排版，添加页眉页脚，然后存成pdf.这个方法用于解决复杂页眉页脚配置，但是手工调整，无法固定模式化。
 
