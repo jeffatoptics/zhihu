@@ -19,7 +19,7 @@
 
 - 偶尔选择多个其他文件打开参考，点击每个文件时，前面打开的文件会自动关闭。浏览完后，`CTRL+W`关掉，重新回到单界面，或者双界面工作。
 
-- ![Image](https://pic4.zhimg.com/80/v2-3a7c80af7e549d4c3272fd658386cf4e.gif)
+- ![自动关闭](https://pic4.zhimg.com/80/v2-3a7c80af7e549d4c3272fd658386cf4e.gif)
 
 解决方法 📝
 
@@ -28,11 +28,11 @@
     - `Limit: Enabled ☑️`
     - `Limit: Value: 2` 设置成2，或者3 (为)
 
-    ![Image](https://pic4.zhimg.com/80/v2-fb6ed8d07287a30001981fdd0adb5019.png)
+    ![Editor设置](https://pic4.zhimg.com/80/v2-fb6ed8d07287a30001981fdd0adb5019.png)
 
 - 对preview界面选择 PIN
 
-    ![Image](https://pic4.zhimg.com/80/v2-9df42bdcfa069f8179602645efb49bb8.png)
+    ![PIN 模式](https://pic4.zhimg.com/80/v2-9df42bdcfa069f8179602645efb49bb8.png)
 
 
 ## 2. 切换预览(Toggle Preview) 快捷键
@@ -43,7 +43,7 @@
 
 📝解决思路：`CTRL+K V`后，快捷键 `CTRL+2`,`View:Focus Second Editor Group`，然后`CTRL+W`关闭，回到单界面工作
 
-![Image](https://pic4.zhimg.com/80/v2-3d7cee6f771493c08dbd078fbeec5ea4.gif)
+![Toggle Preview](https://pic4.zhimg.com/80/v2-3d7cee6f771493c08dbd078fbeec5ea4.gif)
 
 ## 3. Notes
 
@@ -53,7 +53,7 @@
 
 - 草稿文件。粘贴一些临时文字
 
-![Image](https://pic4.zhimg.com/80/v2-1adff2b072eca877f653327a5e009651.png)
+![Notes](https://pic4.zhimg.com/80/v2-1adff2b072eca877f653327a5e009651.png)
 
 ## 4. 熟练用快捷键调用/关闭文件,放大缩小界面
 
