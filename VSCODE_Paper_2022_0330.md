@@ -19,14 +19,21 @@
 
 - 偶尔选择多个其他文件打开参考，点击每个文件时，前面打开的文件会自动关闭。浏览完后，`CTRL+W`关掉，重新回到单界面，或者双界面工作。
 
+- ![Image](https://pic4.zhimg.com/80/v2-3a7c80af7e549d4c3272fd658386cf4e.gif)
+
 解决方法 📝
 
-左侧边栏选择⚙️, `Settings> Workbench >Editor Management`
+- 左侧边栏选择⚙️, `Settings> Workbench >Editor Management`
 
-- `Limit: Enabled ☑️`
-- `Limit: Value: 2` 设置成2，或者3 (为)
+    - `Limit: Enabled ☑️`
+    - `Limit: Value: 2` 设置成2，或者3 (为)
 
-![Image](https://pic4.zhimg.com/80/v2-fb6ed8d07287a30001981fdd0adb5019.png)
+    ![Image](https://pic4.zhimg.com/80/v2-fb6ed8d07287a30001981fdd0adb5019.png)
+
+- 对preview界面选择 PIN
+
+    ![Image](https://pic4.zhimg.com/80/v2-9df42bdcfa069f8179602645efb49bb8.png)
+
 
 ## 2. 切换预览(Toggle Preview) 快捷键
 
@@ -34,11 +41,9 @@
 
 与之鲜明对比，`CTRL+B` 切换左边栏，`CTRL+K Z`切换专注模式非常方便
 
-📝解决思路：`CTRL+K V`后，快捷键 `View:Focus Right Editor Group`，然后`CTRL+W`关闭，回到单界面工作
+📝解决思路：`CTRL+K V`后，快捷键 `CTRL+2`,`View:Focus Second Editor Group`，然后`CTRL+W`关闭，回到单界面工作
 
-唯一的定制工作就是对命令 `View:Focus Right Editor Group`自己定制一个较为方便的按键，与`CTRL+K V`合起来用，稍微顺手一些。比如`CTRL+K K`
-
-![Image](https://pic4.zhimg.com/80/v2-5594a790f3804c62458298fc191370c2.png)
+![Image](https://pic4.zhimg.com/80/v2-3d7cee6f771493c08dbd078fbeec5ea4.gif)
 
 ## 3. Notes
 
