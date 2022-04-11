@@ -26,7 +26,7 @@
 - 左侧边栏选择⚙️, `Settings> Workbench >Editor Management`
 
     - `Limit: Enabled ☑️`
-    - `Limit: Value: 2` 设置成2，或者3 (为)
+    - `Limit: Value: 2` 设置成2，或者3 (一个编辑，一个预览，另外一个供偶尔查其他文件用)
 
     ![Editor设置](https://pic4.zhimg.com/80/v2-fb6ed8d07287a30001981fdd0adb5019.png)
 
