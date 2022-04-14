@@ -22,12 +22,12 @@ MPE最为方便的两个文档输出工具是:
 - html (offline): 内置
 - Chrome(Puppeterr): PDF （按装Chrome浏览器)即可
 
-![Image](https://pic4.zhimg.com/80/v2-0c118f498b12c6e9ace0f8f6d74798d3.png)
+![MPE输出pdf文档](https://pic4.zhimg.com/80/v2-0c118f498b12c6e9ace0f8f6d74798d3.png)
 
 **输出pdf的缺省配置无法分页，没有页眉页脚。**
 
 - 一个方法，用chrome或者edge打开html,可以勾选页眉页脚输出，但格式无法指定，并且打印一个文件路径名字在页脚，导致输出文档无法做正式交流用。Chrome不提供配置选项。
-    ![Image](https://pic4.zhimg.com/80/v2-e5a516e56fe48bdcdb6d5747725a861d.png)
+    ![chrome直接存成pdf文件](https://pic4.zhimg.com/80/v2-e5a516e56fe48bdcdb6d5747725a861d.png)
 
 
 ## 2. 解决方法
@@ -108,7 +108,7 @@ chrome:
 - 页眉分两部分
 - 页脚分三部分
 
-![Image](https://pic4.zhimg.com/80/v2-bca159c97a79d63c6afecc320e5c3715.png)
+![多段页眉页脚](https://pic4.zhimg.com/80/v2-bca159c97a79d63c6afecc320e5c3715.png)
 
 用下面的`footerTemplate`/`headerTemplate`取代上文
 ```
@@ -126,13 +126,16 @@ footerTemplate: '<div style="position: relative; width: 100%; text-align: left; 
 
 ## 4. 更复杂的页眉页脚
 
-![Image](https://pic4.zhimg.com/80/v2-e9cb899f97fd79178585c86b91e1758f.png)
+输出HTML文档，通过word编辑
+缺点是手工编辑，无法固定模式化。
+![Word编辑HTML增加页眉](https://pic4.zhimg.com/80/v2-e9cb899f97fd79178585c86b91e1758f.png)
 
-## 5. 模板地址
+## 5. 增加 LOGO 标识模板地址
 
 [模板地址](https://gitee.com/jeffatoptics/mpe-pdf-template)
 
-在页眉增加LOGO标识
+在页眉增加 LOGO 标识
+
 ![vsc logo 页眉](https://pic4.zhimg.com/80/v2-a9bbb3303b717b24f2426e0211852827.png)
 
 ![输出pdf](https://pic4.zhimg.com/80/v2-4fc0b73b4d9e06d1c911cbd12bb4ba48.gif)
