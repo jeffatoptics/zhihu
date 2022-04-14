@@ -1,28 +1,22 @@
-#! https://zhuanlan.zhihu.com/p/493494190
 
 # Markdown Preview Enhanced (MPE) 输出PDF文档分页及页眉页脚
 
-- 1. 参考
-- 2. 背景
-- 3. 解决方法
-    - 3.1. 分页
-    - 3.2. 页眉页脚
-    - 3.3. 一个例子
-        - 3.3.1. 代码
-        - 3.3.2. 效果
-- 4. 稍微复杂一点的页眉页脚
-- 5. 更复杂的页眉页脚
+<!-- TOC -->
 
+- 背景
+- 解决方法
+    - 分页
+    - 页眉页脚
+    - 一个例子
+        - 代码
+- 稍微复杂一点的页眉页脚
+- 更复杂的页眉页脚
+- 模板地址
+- 参考
 
-## 1. 参考
+<!-- /TOC -->
 
-1. [Github:Header and Footer with Puppeteer PDF? · Issue #142](https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues/142)
-
-1. [puppeteer pdf 配置参数](https://github.com/GoogleChrome/puppeteer/blob/v1.8.0/docs/api.md#pagepdfoptions)   
-
-1. [Github: Headers/Footers on PDF! · Issue #1028](https://github.com/shd101wyy/markdown-preview-enhanced/issues/1028)
-
-## 2. 背景
+## 1. 背景
 
 MPE最为方便的两个文档输出工具是:
 
@@ -37,42 +31,46 @@ MPE最为方便的两个文档输出工具是:
     ![Image](https://pic4.zhimg.com/80/v2-e5a516e56fe48bdcdb6d5747725a861d.png)
 
 
-## 3. 解决方法
+## 2. 解决方法
 
-### 3.1. 分页
+### 2.1. 分页
 
 在markdown文件中分页，用html符号解决: `<div STYLE="page-break-after: always;"></div>`
 
 不影响html显示，输出为pdf时候会分页
 
-### 3.2. 页眉页脚
+### 2.2. 页眉页脚
 
 - 定义chrome或者puppeteer配置参数 `headerTemplate`, `footerTemplate`,以及 `margin`，`displayHeaderFooter`
 
 > ⚠️ 在`displayHeaderFooter`为true的情况下，如果`headerTemplate`, `footerTemplate`不做设置，或者设置不当，仍然不会显示页眉页脚。
 
-具体例子参见如下。
+具体例子参见[例子](#33-一个例子)章节。
 
-### 3.3. 一个例子
+### 2.3. 一个例子
 
-- 两页文档，分页。 
+- 两页文档，分页。
 - 页头居中，显示文档Title
 - 页眉右边对起，显示当前页数和总页数
 
+![页眉页脚](https://pic4.zhimg.com/80/v2-101aa995b89a92e9c80230abc6272dff.png)
 
-#### 3.3.1. 代码
+#### 2.3.1. 代码
 ```txt
 ---
+title: This is Title
 chrome:
     format: "A4"
-    headerTemplate: '<div style="width:100%; text-align:center; border-bottom: 1pt solid #eeeeee; margin: 2px 10px 10px; font-size: 8pt"> This Is Title </span></div>'
-    footerTemplate: '<div style="width:100%; text-align:right; border-top: 1pt solid #eeeeee; margin:  10px 10px 10px; font-size: 8pt;"> <span class=pageNumber></span> of <span class=totalPages></span></div>'
+    headerTemplate: '<div style="width:100%; text-align:center; border-bottom: 1pt solid #eeeeee; margin: 20px 10px 10px; font-size: 10pt"> 
+    <span class=title></span></div>'
+    footerTemplate: '<div style="width:100%; text-align:right; border-top: 1pt solid #eeeeee; margin:  10px 10px 20px; font-size: 8pt;"> 
+    <span class=pageNumber></span> of <span class=totalPages></span></div>'
     displayHeaderFooter: true
     margin:
-        top: '25mm'
-        bottom: '25mm'
-        left: '25mm'
-        right: '25mm'
+        top: '80px'
+        bottom: '80px'
+        left: '60px'
+        right: '60px'
 ---
 
 # Simple Demo of PDF 分页 页眉 页脚
@@ -106,29 +104,44 @@ chrome:
 
 - `<span class=pageNumber>` 里输出文档属性参数 pageNumber, title, date, totalPages等。其他文字需用户手工定义输入
 
+## 3. 稍微复杂一点的页眉页脚
 
+- 页眉分两部分
+- 页脚分三部分
 
-#### 3.3.2. 效果
-
-![Image](https://pic4.zhimg.com/80/v2-08d6bb7a663f2d5cb753eaeee9a2db52.png)
-
-
-## 4. 稍微复杂一点的页眉页脚
-
-- 页眉分行
-- 页脚 分两部分，左对齐写时间，右对齐写页数
+![Image](https://pic4.zhimg.com/80/v2-bca159c97a79d63c6afecc320e5c3715.png)
 
 用下面的`footerTemplate`/`headerTemplate`取代上文
 ```
-    headerTemplate: '<div style="width:100%; text-align:center; border-bottom: 1pt solid #eeeeee; margin: 2px 0px 10px; font-size: 8pt"> &copy;ABCD 2022 ABCD Internal Use <br> <br><span class=title></span></div>'
+headerTemplate: '<div style="position: relative; width:100%; text-align:center; border-bottom: 1pt solid #eeeeee; margin: 30px 0px 10px; font-size: 10pt"></span>
 
-    footerTemplate: '<div style="width:50%; text-align:left; border-top: 1pt solid #eeeeee; margin:  10px 0px 10px; font-size: 8pt;">&nbsp; &nbsp; YYYY-MM-DD</div> <div style="width:50%; text-align:right; border-top: 1pt solid #eeeeee; margin:  10px 0px 10px; font-size: 8pt;"> <span class=pageNumber></span> of <span class=totalPages></span> &nbsp; &nbsp;</div>'
+<div style="position: absolute; width:100%; text-align: center; bottom: 5px;"><span class=title></div>
+
+<div style="position: absolute; text-align: right; bottom: 5px;right: 20px;">version: 1.0</div>
+</div>'
+footerTemplate: '<div style="position: relative; width: 100%; text-align: left; border-top: 1pt solid #eeeeee; margin:  10px 0px 30px; font-size: 8pt;">
+<div style="position: absolute; text-align: left; top: 5px;left: 60px;">YYYY-MM-DD</div>
+<div style="position: absolute; width: 100%; text-align: center; top: 5px;">&copy;2022 ABCD</div>
+<div style="position: absolute; text-align: right;top: 5px;right: 20px;"> <span class=pageNumber></span> of <span class=totalPages></span></div></div>'
 ```
-效果如图
-![Image](https://pic4.zhimg.com/80/v2-adc67537210de96e81806d24ba8ecb33.png)
 
-## 5. 更复杂的页眉页脚
-
-- 用word打开html,然后手工排版，添加页眉页脚，然后存成pdf.这个方法用于解决复杂页眉页脚配置，但是手工调整，无法固定模式化。
+## 4. 更复杂的页眉页脚
 
 ![Image](https://pic4.zhimg.com/80/v2-e9cb899f97fd79178585c86b91e1758f.png)
+
+## 5. 模板地址
+
+[模板地址](https://gitee.com/jeffatoptics/mpe-pdf-template)
+
+在页眉增加LOGO标识
+![Image](https://pic4.zhimg.com/80/v2-a9bbb3303b717b24f2426e0211852827.png)
+
+![Image](https://pic4.zhimg.com/80/v2-4fc0b73b4d9e06d1c911cbd12bb4ba48.gif)
+
+## 6. 参考
+
+1. [Github:Header and Footer with Puppeteer PDF? · Issue #142](https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues/142)
+
+1. [puppeteer pdf 配置参数](https://github.com/GoogleChrome/puppeteer/blob/v1.8.0/docs/api.md#pagepdfoptions)   
+
+1. [Github: Headers/Footers on PDF! · Issue #1028](https://github.com/shd101wyy/markdown-preview-enhanced/issues/1028)

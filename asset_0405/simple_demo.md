@@ -1,14 +1,17 @@
 ---
+title: this is title
 chrome:
     format: "A4"
-    headerTemplate: '<div style="width:100%; text-align:center; border-bottom: 1pt solid #eeeeee; margin: 2px 10px 10px; font-size: 8pt"> This Is Title </span></div>'
-    footerTemplate: '<div style="width:100%; text-align:right; border-top: 1pt solid #eeeeee; margin:  10px 10px 10px; font-size: 8pt;"> <span class=pageNumber></span> of <span class=totalPages></span></div>'
+    headerTemplate: '<div style="width:100%; text-align:center; border-bottom: 1pt solid #eeeeee; margin: 20px 10px 10px; font-size: 10pt"> 
+    <span class=title></span></div>'
+    footerTemplate: '<div style="width:100%; text-align:right; border-top: 1pt solid #eeeeee; margin:  10px 10px 20px; font-size: 8pt;"> 
+    <span class=pageNumber></span> of <span class=totalPages></span></div>'
     displayHeaderFooter: true
     margin:
-        top: '25mm'
-        bottom: '25mm'
-        left: '25mm'
-        right: '25mm'
+        top: '80px'
+        bottom: '80px'
+        left: '60px'
+        right: '60px'
 ---
 
 # Simple Demo of PDF 分页 页眉 页脚
