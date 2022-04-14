@@ -133,9 +133,9 @@ footerTemplate: '<div style="position: relative; width: 100%; text-align: left; 
 [模板地址](https://gitee.com/jeffatoptics/mpe-pdf-template)
 
 在页眉增加LOGO标识
-![Image](https://pic4.zhimg.com/80/v2-a9bbb3303b717b24f2426e0211852827.png)
+![vsc logo 页眉](https://pic4.zhimg.com/80/v2-a9bbb3303b717b24f2426e0211852827.png)
 
-![Image](https://pic4.zhimg.com/80/v2-4fc0b73b4d9e06d1c911cbd12bb4ba48.gif)
+![输出pdf](https://pic4.zhimg.com/80/v2-4fc0b73b4d9e06d1c911cbd12bb4ba48.gif)
 
 ## 6. 参考
 
@@ -144,3 +144,5 @@ footerTemplate: '<div style="position: relative; width: 100%; text-align: left; 
 1. [puppeteer pdf 配置参数](https://github.com/GoogleChrome/puppeteer/blob/v1.8.0/docs/api.md#pagepdfoptions)   
 
 1. [Github: Headers/Footers on PDF! · Issue #1028](https://github.com/shd101wyy/markdown-preview-enhanced/issues/1028)
+
+1. [Github:mpe-puppeteer-header-footer-example](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2Ftmori3y2%2Fmpe-puppeteer-header-footer-example)
