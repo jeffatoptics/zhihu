@@ -5,7 +5,7 @@
 ![Image](https://pic4.zhimg.com/80/v2-0711778443470d862bd4488ebc1eda74.png)
 
 |No.| 插件 | 功能|必要性|
-|:--|:--|:--|:--|
+|---|---|---|---|
 |1|Markdown Preview Enhanced| 主体编辑器,基本已经涵盖Markdown所有功能|必选|
 |2|Paste Image| `ctrl+alt+v` 直接贴图|必选|
 |3|Open| 打开其他类型文件时，用`Open With the default application|必选|
