@@ -3,9 +3,9 @@
 
 @import "{{ site.theme }}";
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .wrapper {
-    width:1280px;
+    width:1200px;
     // left side is 270
     // 1200-270 = 930
     // 30px free room
