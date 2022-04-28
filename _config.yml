@@ -1,3 +1,4 @@
 remote_theme: pages-themes/minimal@v0.2.0
-title: 我的知乎文章
-description: 知乎文章专栏用Vscode写笔记
+title: 我的知乎文章专栏
+description: 用Vscode写笔记
+show_downloads: false
