@@ -4,3 +4,6 @@ show_downloads: false
 logo: /assets/logo.jpg
 google_analytics:
 theme: jekyll-theme-minimal
+# theme: minima
+# minima:
+#   skin: dark
