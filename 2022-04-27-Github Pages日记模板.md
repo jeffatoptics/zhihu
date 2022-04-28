@@ -1,8 +1,9 @@
+#! https://zhuanlan.zhihu.com/p/506523935
 
-# 用 jekyll minima 做一个Github pages 日记模板
+# 用 jekyll minima 做一个 Github pages 日记模板
 
-基于github的theme[jekyll/minima](https://jekyll.github.io/minima/),做了一个日记模板
-[jeffatoptics/jeff-minima](https://jeffatoptics.github.io/jeff-minima/), 模板也可以从Gitee上[gitee jeffatoptics/jeff-minima](https://gitee.com/jeffatoptics/jeff-minima)下来
+基于github的 theme [jekyll/minima](https://jekyll.github.io/minima/) ,做了一个日记模板
+ [jeffatoptics/jeff-minima](https://jeffatoptics.github.io/jeff-minima/) , 模板也可以从Gitee上 [gitee jeffatoptics/jeff-minima](https://gitee.com/jeffatoptics/jeff-minima) 下来
 
 ## 目的
 
