@@ -3,4 +3,7 @@ description: 用Vscode写笔记
 show_downloads: false
 logo: /assets/logo.jpg
 google_analytics:
-theme: jekyll-theme-minimal
+theme: minima
+minima:
+  skin: dark
+# theme: jekyll-theme-minimal
