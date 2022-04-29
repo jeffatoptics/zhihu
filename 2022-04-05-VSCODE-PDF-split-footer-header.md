@@ -1,6 +1,7 @@
-#! https://zhuanlan.zhihu.com/p/493494190
+# ! https://zhuanlan.zhihu.com/p/493494190
 
 # Markdown Preview Enhanced (MPE) 输出PDF文档分页及页眉页脚
+
 
 
 - 背景
@@ -11,8 +12,9 @@
         - 代码
 - 稍微复杂一点的页眉页脚
 - 更复杂的页眉页脚
-- 模板地址
+- 模板地址 (支持LOGO标识)
 - 参考
+
 
 
 ## 1. 背景
@@ -130,7 +132,7 @@ footerTemplate: '<div style="position: relative; width: 100%; text-align: left; 
 缺点是手工编辑，无法固定模式化。
 ![Word编辑HTML增加页眉](https://pic4.zhimg.com/80/v2-e9cb899f97fd79178585c86b91e1758f.png)
 
-## 5. 增加 LOGO 标识模板地址
+## 5. 模板地址 (支持LOGO标识)
 
 [模板地址](https://gitee.com/jeffatoptics/mpe-pdf-template)
 
