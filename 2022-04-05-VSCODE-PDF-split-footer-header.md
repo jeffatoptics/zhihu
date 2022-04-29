@@ -2,22 +2,19 @@
 
 # Markdown Preview Enhanced (MPE) 输出PDF文档分页及页眉页脚
 
+- [背景](#背景)
+- [解决方法](#解决方法)
+    - [分页](#分页)
+    - [页眉页脚](#页眉页脚)
+    - [一个例子](#一个例子)
+        - [代码](#代码)
+- [稍微复杂一点的页眉页脚](#稍微复杂一点的页眉页脚)
+- [更复杂的页眉页脚](#更复杂的页眉页脚)
+- [模板地址 (支持LOGO标识)](#模板地址-支持logo标识)
+- [参考](#参考)
 
 
-- 背景
-- 解决方法
-    - 分页
-    - 页眉页脚
-    - 一个例子
-        - 代码
-- 稍微复杂一点的页眉页脚
-- 更复杂的页眉页脚
-- 模板地址 (支持LOGO标识)
-- 参考
-
-
-
-## 1. 背景
+## 背景
 
 MPE最为方便的两个文档输出工具是:
 
@@ -32,15 +29,15 @@ MPE最为方便的两个文档输出工具是:
     ![chrome直接存成pdf文件](https://pic4.zhimg.com/80/v2-e5a516e56fe48bdcdb6d5747725a861d.png)
 
 
-## 2. 解决方法
+## 解决方法
 
-### 2.1. 分页
+### 分页
 
 在markdown文件中分页，用html符号解决: `<div STYLE="page-break-after: always;"></div>`
 
 不影响html显示，输出为pdf时候会分页
 
-### 2.2. 页眉页脚
+### 页眉页脚
 
 - 定义chrome或者puppeteer配置参数 `headerTemplate`, `footerTemplate`,以及 `margin`，`displayHeaderFooter`
 
@@ -48,7 +45,7 @@ MPE最为方便的两个文档输出工具是:
 
 具体例子参见[例子](#33-一个例子)章节。
 
-### 2.3. 一个例子
+### 一个例子
 
 - 两页文档，分页。
 - 页头居中，显示文档Title
@@ -56,7 +53,7 @@ MPE最为方便的两个文档输出工具是:
 
 ![页眉页脚](https://pic4.zhimg.com/80/v2-101aa995b89a92e9c80230abc6272dff.png)
 
-#### 2.3.1. 代码
+#### 代码
 ```txt
 ---
 title: This is Title
@@ -105,7 +102,7 @@ chrome:
 
 - `<span class=pageNumber>` 里输出文档属性参数 pageNumber, title, date, totalPages等。其他文字需用户手工定义输入
 
-## 3. 稍微复杂一点的页眉页脚
+## 稍微复杂一点的页眉页脚
 
 - 页眉分两部分
 - 页脚分三部分
@@ -126,13 +123,13 @@ footerTemplate: '<div style="position: relative; width: 100%; text-align: left; 
 <div style="position: absolute; text-align: right;top: 5px;right: 20px;"> <span class=pageNumber></span> of <span class=totalPages></span></div></div>'
 ```
 
-## 4. 更复杂的页眉页脚
+## 更复杂的页眉页脚
 
 输出HTML文档，通过word编辑
 缺点是手工编辑，无法固定模式化。
 ![Word编辑HTML增加页眉](https://pic4.zhimg.com/80/v2-e9cb899f97fd79178585c86b91e1758f.png)
 
-## 5. 模板地址 (支持LOGO标识)
+## 模板地址 (支持LOGO标识)
 
 [模板地址](https://gitee.com/jeffatoptics/mpe-pdf-template)
 
@@ -142,7 +139,7 @@ footerTemplate: '<div style="position: relative; width: 100%; text-align: left; 
 
 ![输出pdf](https://pic4.zhimg.com/80/v2-4fc0b73b4d9e06d1c911cbd12bb4ba48.gif)
 
-## 6. 参考
+## 参考
 
 1. [Github:Header and Footer with Puppeteer PDF? · Issue #142](https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues/142)
 
