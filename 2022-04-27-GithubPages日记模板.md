@@ -13,7 +13,7 @@
 
 - 简单化，界面简单固定下来。本地只用Vscode,然后直接push发表。
 
-- 支持手机大小的界面!可以缩小浏览
+- 顺便做了一下对数学公式katex 以及mermaid绘图的支持
 
 ## 用法
 
@@ -25,8 +25,10 @@
 
 1. 删了一堆minima没必要的文件（应该是给本地预览用的）,改了两三个缺省参数，调正了大小
 
+1. custom-head.html 添加了代码支持了katex,mathjax和mermaid
+
 2. 按 [Jeklly 网站](https://jekyllrb.com/docs/posts/) 给出的三四行代码，直接copy做了一个category的page
 
 模板效果如下:
 
-![jeff-minima](https://pic4.zhimg.com/80/v2-b07de587e42e790c762525049052f332.gif)
+![jeff-minima效果](https://pic4.zhimg.com/80/v2-210dca306ac65bcf521a7c5e401589f8.gif)
