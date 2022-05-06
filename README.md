@@ -12,4 +12,4 @@
 1. [除了块引用，请问 Markdown 中如为部分内容添加边框？](2022-04-18-vscode-answer-admonition.md)
 1. [Github Pages日记模板](2022-04-27-GithubPages日记模板.md)
 
-## 🔗 [HOME](https://jeffatoptics.github.io/)
+
