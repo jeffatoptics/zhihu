@@ -1,3 +1,4 @@
+# 停止更新
 ## [jeffatoptics知乎杂记](https://jeffatoptics.github.io/zhihu/)
 
 ---
